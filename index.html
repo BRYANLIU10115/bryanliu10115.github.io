@@ -3,10 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to Bryan Liu's Website</title>
+  <title>Bryan Liu | Robotics, AI, and Embedded Systems</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background: #f4f4f4; }
+    header { background: #333; color: #fff; padding: 1rem 0; text-align: center; }
+    nav { margin-top: 10px; }
+    nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    .container { padding: 20px; max-width: 900px; margin: auto; background: #fff; }
+    section { margin-bottom: 40px; }
+    h1, h2 { color: #333; }
+    ul { padding-left: 20px; }
+    footer { text-align: center; padding: 20px; background: #333; color: #fff; margin-top: 40px; }
+  </style>
 </head>
 <body>
-  <h1>Hello, I'm Bryan Liu!</h1>
-  <p>Welcome to my personal homepage.</p>
+
+<header>
+  <h1>Bryan Liu</h1>
+  <p>Robotics R&D | AI Systems | Embedded Networking</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="container">
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm Bryan Liu, a Computer Engineering student at Cal Poly Pomona (GPA 3.83, expected May 2026). My passion lies at the intersection of robotics, AI systems, embedded electronics, and network forensics. I've interned at MSI's Robotics R&D Headquarters and led multiple engineering projects ranging from GPS logging systems to tiltrotor drone development.</p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <h3>Micro-Star International (MSI) Headquarters | Robotics R&D Intern</h3>
+    <ul>
+      <li>Designed and evaluated suspension architectures in NVIDIA Omniverse, raising terrain-handling by ≈20%.</li>
+      <li>Converted SolidWorks assemblies into ROS2 URDF models with custom joint constraints.</li>
+      <li>Developed low-cost passive-joint suspensions, cutting projected AMR repair costs by 25%.</li>
+      <li>Produced and field-tested 1:5 scale 3D printed AMR prototypes.</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>GPS Data Logging System:</strong> ESP32-S3 firmware developer; LTE telemetry to Azure IoT, SD buffer redundancy, LoRa mesh fallback.</li>
+      <li><strong>DDoS Mitigation Research:</strong> AWS EC2 attack simulations (>1 Gbps) and firewall benchmarking; produced a comparative study on Layer 3/4/7 defenses.</li>
+      <li><strong>Rescue Vehicle AI:</strong> YOLOv8 fine-tuning on RTX 4070 for pedestrian/car detection; Dockerized deployment to Raspberry Pi 5 + Hailo.</li>
+      <li><strong>eVTOL Drone Design:</strong> Electrical load analysis, ArduPilot configuration, VTOL transition success on a modular tiltrotor platform.</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Programming:</strong> C/C++, Python, MATLAB, Verilog, PlatformIO, Docker</li>
+      <li><strong>Electronics:</strong> LTSpice, KiCad, SolidWorks Electrical, PCB Soldering</li>
+      <li><strong>Robotics/Simulations:</strong> ROS2, ArduPilot, NVIDIA Omniverse, Gazebo, OpenFOAM</li>
+      <li><strong>Networking:</strong> Wireshark, PFsense, OPNSense, AWS, Azure</li>
+      <li><strong>Operating Systems:</strong> Ubuntu, Kali Linux, Windows</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:bryanliuwork@gmail.com">bryanliuwork@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/bryanliu10115" target="_blank">linkedin.com/in/bryanliu10115</a></p>
+  </section>
+
+</div>
+
+<footer>
+  <p>&copy; 2025 Bryan Liu | All rights reserved.</p>
+</footer>
+
 </body>
 </html>
