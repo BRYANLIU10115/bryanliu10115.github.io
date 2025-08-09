@@ -2,62 +2,72 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Projects – Bryan Liu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bryan Liu | Project Showcase</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; line-height: 1.6; }
-    header { background: #333; color: #fff; padding: 1.5rem 0; text-align: center; }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background: #f4f4f4; }
+    header { background: #333; color: #fff; padding: 1rem 0; text-align: center; }
+    nav { margin-top: 10px; }
     nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
-    .container { max-width: 900px; margin: auto; background: #fff; padding: 30px; }
-    h1, h2 { color: #333; }
-    .project { margin-bottom: 40px; }
+    .container { padding: 20px; max-width: 900px; margin: auto; background: #fff; }
+    section { margin-bottom: 40px; }
+    h1 { color: #fff; }
+    h2 { color: #333; }
+    ul { padding-left: 20px; }
+    footer { text-align: center; padding: 20px; background: #333; color: #fff; margin-top: 40px; }
+    .project { margin-bottom: 30px; }
     .project h3 { margin-bottom: 5px; }
     .project p { margin: 0; }
-    footer { text-align: center; padding: 20px; background: #333; color: #fff; margin-top: 40px; }
-    a.back-link { display: inline-block; margin-bottom: 30px; color: #007bff; text-decoration: none; }
-    a.back-link:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
 
 <header>
   <h1>Bryan Liu</h1>
-  <p>Selected Projects Portfolio</p>
+  <p>Robotics R&D | AI Systems | Embedded Networking</p>
   <nav>
     <a href="index.html">Home</a>
-    <a href="resume.html">Resume</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#experience">Experience</a>
+    <a href="projects.html">Projects</a>
+    <a href="index.html#skills">Skills</a>
+    <a href="index.html#contact">Contact</a>
   </nav>
+  <p style="background: #ffcc00; color: #333; padding: 10px; font-weight: bold; margin-top: 15px;">
+    Website in Progress!
+  </p>
 </header>
 
 <div class="container">
-  <a class="back-link" href="index.html">&larr; Back to Home</a>
+  <section>
+    <h2>Project Showcase</h2>
 
-  <h2>My Projects</h2>
+    <div class="project">
+      <h3>GPS Data Logging System</h3>
+      <p>ESP32-S3 firmware developer; LTE telemetry to Azure IoT, SD buffer redundancy, LoRa mesh fallback with inertial dead-reckoning for off-grid navigation.</p>
+    </div>
 
-  <div class="project">
-    <h3>GPS Data Logging System</h3>
-    <p>Designed ESP32-S3 firmware for GPS + LTE telemetry, pushing real-time logs to Azure IoT. Built SD buffering with LoRa fallback and inertial dead-reckoning for off-grid mesh coverage.</p>
-  </div>
+    <div class="project">
+      <h3>DDoS Mitigation Research</h3>
+      <p>Simulated >1 Gbps UDP, SYN flood, and botnet attacks on AWS EC2. Benchmarked multi-layer firewall defenses and containerized IDS/IPS for latency profiling.</p>
+    </div>
 
-  <div class="project">
-    <h3>DDoS Mitigation Research</h3>
-    <p>Simulated UDP, SYN flood, and botnet attacks exceeding 1 Gbps on AWS EC2. Benchmarked firewall response layers (L3–L7) and containerized IDS/IPS environments for latency profiling.</p>
-  </div>
+    <div class="project">
+      <h3>Rescue Vehicle AI</h3>
+      <p>Fine-tuned YOLOv8 for pedestrian/car detection; deployed via Docker to Raspberry Pi 5 with Hailo NPU for real-time inference.</p>
+    </div>
 
-  <div class="project">
-    <h3>Rescue Vehicle AI</h3>
-    <p>Fine-tuned YOLOv8 with custom datasets for accurate car/pedestrian detection. Integrated Dockerized inference pipeline to Raspberry Pi 5 with Hailo AI module for real-time vision.</p>
-  </div>
+    <div class="project">
+      <h3>eVTOL Tiltrotor Drone</h3>
+      <p>Electrical load analysis, ArduPilot configuration, and successful VTOL transition on modular tiltrotor platform.</p>
+    </div>
 
-  <div class="project">
-    <h3>eVTOL Tiltrotor Drone</h3>
-    <p>Handled electrical power analysis and load balancing for tiltrotor transition. Configured ArduPilot firmware and validated stable VTOL flight using PX4 and QGroundControl.</p>
-  </div>
+    <div class="project">
+      <h3>Robotics Suspension Modeling (MSI Internship)</h3>
+      <p>Created passive-joint suspension systems in NVIDIA Omniverse; converted SolidWorks to URDF/ROS2, improving terrain handling by ≈20% and reducing repair cost estimates by 25%.</p>
+    </div>
 
-  <div class="project">
-    <h3>Robotics Suspension Modeling (MSI Internship)</h3>
-    <p>Created custom passive-joint suspension systems in NVIDIA Omniverse. Exported SolidWorks assemblies to URDF and ROS2, improving terrain handling by 20% and reducing repair cost estimates by 25%.</p>
-  </div>
+  </section>
 </div>
 
 <footer>
